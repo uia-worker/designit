@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="no-NB">
+<head>
+    <meta charset="utf-8">
+    <title>DesignAI</title>
+    <link href='https://fonts.googleapis.com/css?family=IBM Plex Serif' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="styles/designit-style.css" title="default">
+    <script type="text/javascript" src="js/designit.js"></script>
+</head>
+<body>
+  <div class="tocset">
+    <div class="tocview">
+      <div class="tocviewlist tocviewlisttopspace">
+        <div class="tocviewtitle">
+          <table cellspacing="0" cellpadding="0">
+            <tbody>
+              <tr>
+                <td style="width: 1em;">
+              <a href="javascript:void(0);" title="Expand/Collapse" class="tocviewtoggle" onclick="TocviewToggle(this,&quot;tocview_0&quot;);">▼</a>
+                </td>
+                <td>
+                </td>
+                <td>
+                  <a href="ai.html" class="tocviewlink" data-pltdoc="x">DesignIT</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--
+        <div class="tocviewsublisttop" style="display: block;" id="tocview_0">
+          <table cellspacing="0" cellpadding="0">
+            <tbody>
+            <tr>
+              <td align="right">
+              </td>
+              <td>
+                <a href="ai.html" class="tocviewlink" data-pltdoc="x"></a>
+              </td>
+            </tr>
+            <tr>
+              <td align="right">
+              </td>
+              <td>
+                <a href="komp.html" class="tocviewlink" data-pltdoc="x">Kompendium</a>
+              </td>
+            </tr>
+            <tr>
+              <td align="right">
+              </td>
+              <td>
+                <a href="oppgaver.html" class="tocviewlink" data-pltdoc="x">Oppgaver</a>
+              </td>
+            </tr>
+            <tr>
+              <td align="right">
+              </td>
+              <td>
+                <a href="sem.html" class="tocviewlink" data-pltdoc="x">Seminar</a>
+              </td>
+            </tr>
+            <tr>
+              <td align="right">
+              </td>
+              <td>
+                <a href="honnor.html" class="tocviewlink" data-pltdoc="x">Honnør</a>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      -->
+      </div>
+    </div>
+<!--
+    <div class="tocsub">
+      <div class="tocsubtitle">På denne siden:</div>
+      <table class="tocsublist" cellspacing="0">
+        <tbody>
+          <tr>
+            <td>
+              <span class="tocsublinknumber">1<tt>&nbsp;</tt></span>
+              <a href="#innledning" class="tocsubseclink" data-pltdoc="x">Innledning</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span class="tocsublinknumber">2<tt>&nbsp;</tt></span>
+              <a href="#motivasjon" class="tocsubseclink" data-pltdoc="x">Motivasjon for automatmodeller</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span class="tocsublinknumber">3<tt>&nbsp;</tt></span>
+              <a href="#modellerdatamaskin" class="tocsubseclink" data-pltdoc="x">Modeller for datamaskin</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span class="tocsublinknumber">4<tt>&nbsp;</tt></span>
+              <a href="#tilstandsautomat" class="tocsubseclink" data-pltdoc="x">Tilstandsautomat</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span class="tocsublinknumber">5<tt>&nbsp;</tt></span>
+              <a href="#nfa" class="tocsubseclink" data-pltdoc="x">NFA</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span class="tocsublinknumber">6<tt>&nbsp;</tt></span>
+              <a href="#regexp" class="tocsubseclink" data-pltdoc="x">Regulære uttrykk</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span class="tocsublinknumber">7<tt>&nbsp;</tt></span>
+              <a href="#filosofi" class="tocsubseclink" data-pltdoc="x">Til (filosofisk) ettertanke</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span class="tocsublinknumber">8<tt>&nbsp;</tt></span>
+              <a href="#begrep" class="tocsubseclink" data-pltdoc="x">Begrepsoppklaring</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span class="tocsublinknumber">9<tt>&nbsp;</tt></span>
+              <a href="#referanser" class="tocsubseclink" data-pltdoc="x">Referanser (ikke obligatorisk lesestoff)</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+-->
+  </div>
+  <div class="maincolumn">
+    <p>OBS! Siden er under utvikling (16. februar 2023).</p>
+    <h1>
+      Design AI (eller annen tittel?)
+      <a name="filer"></a>
+    </h1>
+    <p>Etter å ha lest denne web-siden, skal du:
+    <ul>
+      <li>kunne forstå vår visjon</li>
+      <li>kunne forstå vår tilnærming til formalisering</li>
+      <li>se et forslag for arkitekturen for vår løsning</li>
+      <li></li>
+      <li></li>
+    </ul>
+    </p>
+    <h2>
+      1 Innledning
+      <a name="innledning"></a>
+    </h2>
+    <p>Vår visjon er å [be]vise bruken av eksisterende ML rammeverk i undervisning av design av datasystemer. Designkrav er ofte gitt som uformelle beskrivelser og må formaliseres for å bli representert i programvaren. Etter formaliseringen kan LLM, PaLM, GPT-3 modeller brukes for å verifisere designet.</p>
+    <p>Informasjonsmengden tilgjengelig på WWW er enorm og å finne relevant og pålitelig informasjon er utfordrende. Både for studentene og lærere er det krevende å bearbeide mengden av ny informasjon samt strukturere og kontekstualisere den. Ved å utforske anvendelse av eksisterende ML (MaskinLæring) rammeverk, ønsker vi å kritisk se på muligheter for å integrere "lokal" kunnskap (relatert til design av datasystemer) med ML rammeverk. Det er kjent at eksisterende programvare, som anvender store ML rammeverk, sliter med problemer som mangel på nyeste informasjon, "forurensning" (vanskelig å vite om resultatet er kun en gjengivelse av noe som modellen "har sett" før eller om modellen har "skapt" resultatet selv) og [ukvalifisert] gjetting.</p>
+    <p>Det er foreslått flere tilnærminger for å forbedre eksisterende ML rammeverk. Å "lære" modellene matematisk logikk er et forslag, som baserer seg på en teori om at matematisk logikk er den mest presise logikken som mennesker har og at den er mest ufordrende å lære. Hvis modellen klarer å "lære" det, så vil man minske sjansen for [ukvalifisert] gjetting og motstridende (logisk, som ofte sammenfaller med intuitivt) uttalelser for andre input en matematiske beskrivelser. Metoden foreslått av (Jiang et al., 2022) baserer seg på tre faser, som ligner på kjente faser fra design og systemutvikling, - drøfte, skissere og bevise (Draft, Sketch, and Prove (DSP)). Ved å ta i bruk eksperimentelle modeller relatert til denne metoden, ønsker vi å teste beskrivelser (ofte kalt spesifikasjoner) innen design og systemutvikling.</p>
+    <p>Et annet forslag er å skallering av språkmodellering med stier (en. scaling language modeling with pathways)</p>
+
+    <p>Det finnes formaliserte metoder (og verktøy som kompilatorer) for å overføre modeller representert i et programmeringsspråk til en representasjon, som kan utføres av dagens prosessorer. Disse er direkte relatert til maskinvarearkitektur, som har vært robust de siste 50-60 år. Det finnes derimot lite formalisering for å overføre uformelle beskrivelser av systemkrav fra homo sapiens til representasjon i programmeringsspråk. Det finnes formaliseringsforsøk, som Isabelle/HOL (Nipkow, 2022) og Alloy (2021), og noen praktiske forsøk, som Rational Unified Process (Per Kroll & Philippe Kruchten, 2009) eller nyere initiativer som AlphaCode (2014).</p>
+
+    <p>Basert på min kunnskap, har ingen av disse blitt testet ut i praktiske undervisningssituasjoner. Vi ønsker å foreslå en versjon av en arkitektur basert på noen av disse modellene/metodene, som kan brukes for å eksperimentere med en "lokal" bruk av store ML modeller i en kontekst av våre emner. Første fasen vil være å etablere en infrastruktur for testing. Andre fasen vil være å inviterer studenter (og eventuelt partnere) til å prøve rammeverket i praksis og evaluerer resultatene. Tredje fase vil være å gjøre rammeverket bedre. En fjerde fase kan være publisering av resultater.</p>
+
+    <h2>
+      X Arkitektur
+      <a name=""></a>
+    </h2>
+    <p>Beskrivelse av behovet --tekstanalyse--> Mengde med sensorer og aktuatorer ----tekstanalyse/eventulet bruk av lært modell----> Kolleksjoner av typer og funksjoner (kalt også signaturer) relatert til s&a ---formelt analyseverktøy--> relasjoner mellom typer og funksjoner plus regler multipisitet -- "logisk dom" -->  </p>
+
+    <h2>
+      X Valg av modeller
+      <a name=""></a>
+    </h2>
+    <p></p>
+    
+    <img src="images/features-most-popular-large-language-models.png" width="500" alt="LLM (Lipenkova, 2022)">
+    <p>Figur 1. Large Language Models (Lipenkova, 2022).</p>
+
+    <h2>
+      X Refleksjon om begreper
+      <a name=""></a>
+    </h2>
+    <p>kanskje ikke et program, men et testmiljø/eksperimentelt miljø, som kan gjøre en Proof-of-case for anvendelse av LLM, PaLM, GPT-3 i undervisning av tjenestedesign og systemutvikling ...?</p>
+    <p>Kanskje ikke helt presist å likestille programmeringsspråk og platform; med platform forstår jeg operativsystem + ISA (instruksjoner for spesifikk maskinvare); usikker om vi trenger å forholde oss til platform her, siden alle kildekode i dag kan "oversettes" til en mangfold av platformer og "oversettere" (kompilatorer) er på et høyt formaliseringsnivå (følger matematisk logikk);</p>
+    <p>rogram er vanskelig å definere, siden det kan være alt fra noen få instruksjoner, til store programmer med millioner av instruksjoner; kanskje bruke "applikasjon" her?</p>
+    <p>Forslag: "De fleste IT-applikasjoner har mye til felles, uansett programmeringsspråk de er utviklet i."</p>
+    <p>objekt er egentlig ikke en stabil byggestein i alle applikasjoner; det er en abstraksjon kun i enkelte språk, og kan brukes ikke i teoriene, som danner grunnlaget for design av programmeringsspråk; siden vi ønsker å formalisere gjennom programmeringsspråk generelt, kan det være en ide å ikke bruke "objekt" og "klasse"? Mest grunnleggende, ville jeg sagt, er kolleksjoner av typer og funksjoner. Hvis vi ønsker abstrahere utover det, så kunne vi brukt "datastrukturer". "Objektklasser" kan kanskje erstattes med moduler eller pakker. Det er disse begrepene som brukes for å beskrive hierarkier i kolleksjon av typer og funksjoner. "Objektklasser" er også noe tvetydig, siden den vanligste, meg kjente, forklaring på forbindelse mellom klasse og objekt er at et objekt er en instans av en klasse.</p>
+    <p>TYPER (og også FUNKSJONER) kan inneholde andre TYPER og på denne måten danne relasjoner. Kardinalitet kan oppfattes som funksjon, som knytter sammen ikke bare 2 entiteter med N antall entiteter.</p>
+
+    <h2>
+       X Begrepsoppklaring
+       <a name="begrep"></a>
+     </h2>
+     <ul>
+       <li><code style="color: #A16EFD; font-weight: bolder;">begrep</code> definisjon med <code style="color: #cfcecc;">kode</code></li>
+       <li><code style="color: #A16EFD; font-weight: bolder;">predikat</code> begrep (signatur, type) som i en "logisk dom" (kompilering og utførelse av kode / testing) knyttes til subjektet (som funksjonsparameter, f.eks.) som dets positive eller negative bestemmelse (resultatet av den "logiske dommen")</li>
+       <li><code style="color: #A16EFD; font-weight: bolder;">autoregression</code> (AR) </li>
+       <li><code style="color: #A16EFD; font-weight: bolder;">autoencoding</code> (AE) ingen "density estimation"</li>
+       <li><code style="color: #A16EFD; font-weight: bolder;">density estimation</code></li>
+
+
+     <h2>
+       X Referanser
+       <a name="referanser"></a>
+     </h2>
+     <ul>
+       <li>Alloy. Alloytools.org. (2021). http://alloytools.org/</li>
+       <li>AlphaCode. (2014). Deepmind.com. https://alphacode.deepmind.com/ (AlphaCode, 2014)</li>
+       <li>Chowdhery, A., Narang, S., Devlin, J., Bosma, M., Mishra, G., Roberts, A., Barham, P., Chung, H. W., Sutton, C., Gehrmann, S., Schuh, P., Shi, K., Tsvyashchenko, S., Maynez, J., Rao, A., Barnes, P., Tay, Y., Shazeer, N., Prabhakaran, V., & Reif, E. (2022). PaLM: Scaling Language Modeling with Pathways. ArXiv.org. https://doi.org/10.48550/arXiv.2204.02311 (Chowdhery et al., 2022)</li>
+       <li>Han, J. M., Rute, J., Wu, Y., Ayers, E. W., & Polu, S. (2021). Proof Artifact Co-training for Theorem Proving with Language Models. ArXiv.org. https://doi.org/10.48550/arXiv.2102.06203 (Han et al., 2021)</li>
+       <li>Jackson, D. (2016). Software abstractions : logic, language, and analysis. The Mit Press. (Jackson, 2016)</li>
+       <li>Jiang, A. Q., Welleck, S., Zhou, J. P., Li, W., Liu, J., Jamnik, M., Lacroix, T., Wu, Y., & Lample, G. (2022). Draft, Sketch, and Prove: Guiding Formal Theorem Provers with Informal Proofs. ArXiv.org. https://doi.org/10.48550/arXiv.2210.12283 (Jiang et al., 2022)</li>
+       <li>Nipkow, T. (2022). Isabelle. In.tum.de. https://isabelle.in.tum.de/ (Nipkow, 2022)</li>
+       <li>Per Kroll, & Philippe Kruchten. (2009). The rational unified process made easy : a practitioner’s guide to the RUP. Addison-Wesley. (Per Kroll & Philippe Kruchten, 2009)</li>
+       <li>Lipenkova, J. (2022, September 26). Choosing the right language model for your NLP use case. Medium; Towards Data Science. https://towardsdatascience.com/choosing-the-right-language-model-for-your-nlp-use-case-1288ef3c4929 (Lipenkova, 2022)</li>
+       <li>DistilBERT. (2014). Huggingface.co. https://huggingface.co/docs/transformers/model_doc/distilbert (DistilBERT, 2014)</li>
+     </ul>
+  </div>
+
+</body>
+</html>
